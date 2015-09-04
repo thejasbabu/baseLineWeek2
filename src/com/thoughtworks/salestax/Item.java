@@ -1,3 +1,4 @@
+// Item class contains details of an items and returns its net amount
 package com.thoughtworks.salestax;
 
 public class Item {

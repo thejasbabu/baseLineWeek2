@@ -1,10 +1,11 @@
+//Cashier class contains list of items and calculates the total amount
 package com.thoughtworks.salestax;
 
 import java.util.ArrayList;
 
 public class Cashier {
 
-    ArrayList<Item> items;
+    private ArrayList<Item> items;
 
     public Cashier(ArrayList<Item> items) {
         this.items = items;
