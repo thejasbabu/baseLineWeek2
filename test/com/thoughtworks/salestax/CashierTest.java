@@ -10,7 +10,7 @@ public class CashierTest {
 
     @Test
     public void shouldReturnZeroWhenNoItemIsPassed() {
-        Cashier cashier = new Cashier(null);
+        Cashier cashier = new Cashier(new ArrayList<Item>());
 
         assertEquals(0.0, cashier.totalAmount(), 0.0);
     }
