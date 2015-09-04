@@ -14,9 +14,19 @@ public class Item {
     }
 
     public double netAmount() {
-        if(isTaxable)
-            return (amount * 0.05 + amount);
-        else
-            return amount;
+        double tax=0;
+        double netAmount;
+
+        if(isTaxable) {
+            tax +=5;
+        }
+
+        if(isImported) {
+            tax +=10;
+        }
+
+        netAmount = amount + (amount * tax) / 100;
+
+        return netAmount;
     }
 }

@@ -19,4 +19,11 @@ public class ItemTest {
 
         assertEquals(10.5, item.netAmount(), 0.0);
     }
+
+    @Test
+    public void shouldReturnTheNetAmountAfterTaxAndImportedTaxWhenAnImportedAndTaxableItemIsGiven() {
+        Item item = new Item("perfume", 20, true, true);
+
+        assertEquals(23, item.netAmount(), 0.0);
+    }
 }
