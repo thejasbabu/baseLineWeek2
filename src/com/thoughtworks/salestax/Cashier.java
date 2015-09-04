@@ -11,6 +11,11 @@ public class Cashier {
     }
 
     public double totalAmount() {
-        return  0.0;
+        double totalAmount=0;
+
+        for(Item item: items) {
+            totalAmount += item.netAmount();
+        }
+        return totalAmount;
     }
 }
