@@ -14,6 +14,9 @@ public class Item {
     }
 
     public double netAmount() {
-        return 10;
+        if(isTaxable)
+            return (amount * 0.05 + amount);
+        else
+            return amount;
     }
 }

@@ -1,5 +1,5 @@
 ##Problem Definition##
-To calculate the sales tax for various goods which one purchases
+To calculate the sales tax for various items which one purchases
 
 ##Setting up the Development Envirnoment##
 -JDK Version 1.6 or higher

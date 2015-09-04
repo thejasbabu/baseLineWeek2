@@ -12,4 +12,11 @@ public class ItemTest {
 
         assertEquals(10, item.netAmount(), 0.0);
     }
+
+    @Test
+    public void shouldReturnTheNetAmountAfterTaxOfFivePercentWhenAnItemWhichIsTaxableIsGiven() {
+        Item item = new Item("music CD", 10, true, false);
+
+        assertEquals(10.5, item.netAmount(), 0.0);
+    }
 }
